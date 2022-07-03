@@ -1,0 +1,464 @@
+
+* {
+    font-family: 'Karantina';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('thumb-1920-1046632.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.background_rgba {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+}
+
+#new_image {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Superman_vs_batman.gif');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.winner_image {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('Batman_gif_win.gif');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container span {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    margin: 45px 0px 30px 50px;
+    font-size: 100px;
+    font-weight: bold 700;
+}
+
+p {
+    font-family: 'bahiana';
+    font-size: 40px;
+    text-align: center;
+    color: yellow;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    max-width: 900px;
+    margin-bottom: 60px;
+    margin-top: 7px;
+}
+
+button {
+    margin-bottom: 20px;
+    margin-top: 200px;
+    margin-left: 35px;
+    font-size: 20px;
+    padding: 8px;
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+#next_button {
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: yellow;
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: none;
+}
+
+
+/*------------------------------ Position Button ---------------------*/
+
+.flashcard button {
+    margin-left: 60px;
+}
+
+.mulhermaravilhacard button {
+    margin-left: 25px;
+}
+
+.aquamancard button {
+    margin-left: 50px;
+}
+
+.catwomancard button, .batmancard button, .supermancard button {
+    margin-left: 45px;
+}
+
+
+
+/*-----------------------Image Cards----------------*/
+
+.aquamancard {
+    background-image: url("Aquaman.jpeg");
+}
+
+.arqueirocard {
+    background-image: url("ArqueiroVerde.jpg");
+}
+
+.catwomancard {
+    background-image: url("MulherGato.jpg");
+}
+
+.flashcard {
+    background-image: url("Flash.jpg");
+}
+
+.batmancard {
+    background-image: url("Batman.jpg");
+}
+
+.drdestinocard {
+    background-image: url("DrDestino.avif");
+}
+
+.monstrodopantanocard {
+    background-image: url("MonstrodoPantano.jpg");
+}
+
+.exterminadorcard {
+    background-image: url("Extermindaor.jpg");
+}
+
+.mulhermaravilhacard {
+    background-image: url("MulherMaravilha.jpg");
+}
+
+.supermancard {
+    background-image: url("Superman.jpg");
+}
+
+
+
+/*------------------------------ Cards ---------------------*/
+.aquamancard, .arqueirocard, .catwomancard, .flashcard, .batmancard, .drdestinocard, .monstrodopantanocard, .exterminadorcard, .mulhermaravilhacard, .supermancard {
+    width: 180px;
+    height: 180px;
+    border: 3px solid #f5dc00;
+    border-radius: 7px;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+}
+
+/* ---------------------- Animation--------------------------------*/
+
+.cards .aquamancard:hover {
+    transform: scale(1.5)rotate(10deg);
+    box-shadow: 0 0 1000px rgba(6, 214, 255, 9.0);
+    border: 3px solid rgb(6, 214, 255);
+}
+
+.cards .flashcard:hover, .cards .mulhermaravilhacard:hover {
+    transform: scale(1.5)rotate(-10deg);
+    box-shadow: 0 0 1000px rgba(255, 0, 0, 9.0);
+    border: 3px solid rgb(225, 10, 10);
+}
+
+.cards .catwomancard:hover {
+    transform: scale(1.5)rotate(10deg);
+    box-shadow: 0 0 1000px rgba(255, 255, 255, 9.0);
+    border: 3px solid rgb(4, 4, 4);
+}
+
+.cards .mulhermaravilhacard:hover {
+    transform: scale(1.5)rotate(-10deg);
+    box-shadow: 0 0 1000px rgba(132, 5, 5, 9.0);
+    border: 3px solid rgb(132, 5, 5);
+}
+
+.cards .arqueirocard:hover {
+    transform: scale(1.5)rotate(-10deg);
+    box-shadow: 0 0 1000px rgba(15, 98, 10, 9.0);
+    border: 3px solid rgb(15, 98, 10);
+}
+
+.cards .exterminadorcard:hover {
+    transform: scale(1.5)rotate(10deg);
+    box-shadow: 0 0 1000px rgba(132, 5, 5, 9.0);
+    border: 3px solid rgb(132, 5, 5);
+}
+
+.cards .batmancard:hover {
+    transform: scale(1.5)rotate(-10deg);
+    box-shadow: 0 0 1000px rgba(54, 51, 51, 9.0);
+    border: 3px solid rgb(54, 51, 51);
+}
+
+.cards .drdestinocard:hover {
+    transform: scale(1.5)rotate(10deg);
+    box-shadow: 0 0 1000px rgba(12, 53, 5, 9.0);
+    border: 3px solid rgb(12, 53, 3);
+}
+
+.cards .supermancard:hover {
+    transform: scale(1.5)rotate(10deg);
+    box-shadow: 0 0 1000px rgba(5, 36, 156, 9.0);
+    border: 3px solid rgb(5, 36, 156);
+}
+
+.cards .monstrodopantanocard:hover {
+    transform: scale(1.5)rotate(-10deg);
+    box-shadow: 0 0 1000px rgba(12, 53, 5, 9.0);
+    border: 3px solid rgb(12, 53, 3);
+}
+
+
+
+
+/*---------------------- Cards Texts Winners------------------*/
+
+
+#Keep_card_text01 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("Aquaman.jpeg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(-5deg);
+    box-shadow: 0 0 1000px rgba(6, 214, 255, 9.0);
+    border: 3px solid rgb(6, 214, 255);
+    margin-top: 80px;
+}
+
+#Keep_card_text02 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("MulherMaravilha.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(255, 0, 0, 9.0);
+    border: 3px solid rgb(225, 10, 10);
+    margin-top: 80px;
+}
+
+#Keep_card_text03 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("ArqueiroVerde.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(15, 98, 10, 9.0);
+    border: 3px solid rgb(15, 98, 10);
+    margin-top: 80px;
+}
+
+#Keep_card_text04 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("Batman.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(54, 51, 51, 9.0);
+    border: 3px solid rgb(54, 51, 51);
+    margin-top: 80px;
+}
+
+#Keep_card_text05 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("Superman.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(5, 36, 156, 9.0);
+    border: 3px solid rgb(5, 36, 156);
+    margin-top: 80px;
+}
+
+#Keep_card_text06 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("MulherMaravilha.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(255, 0, 0, 9.0);
+    border: 3px solid rgb(225, 10, 10);
+    margin-top: 80px;
+}
+
+#Keep_card_text07 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("Batman.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(54, 51, 51, 9.0);
+    border: 3px solid rgb(54, 51, 51);
+    margin-top: 80px;
+}
+
+#Keep_card_text08 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("Superman.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(5, 36, 156, 9.0);
+    border: 3px solid rgb(5, 36, 156);
+    margin-top: 80px;
+}
+
+#Keep_card_text09 {
+    border-radius: 4px;
+    display: none;
+    color: yellow;
+    background-image: url("Batman.jpg");
+    width: 140px;
+    height: 140px;
+    border: 2px solid #ffffff;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.8)rotate(5deg);
+    box-shadow: 0 0 1000px rgba(54, 51, 51, 9.0);
+    border: 3px solid rgb(54, 51, 51);
+    margin-top: 80px;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    margin-top: 100px;
+}
+
+.Batman_Card {
+    width:300px;
+    height: 400px;
+    border: 1px solid;
+    position: relative;
+    animation: flip 3s alternate infinite ease-in-out;
+    transform-style: preserve-3d;
+
+}
+
+@keyframes flip {
+    0% {transform: rotateY();}
+    100% {transform: rotateY(360deg);}
+}
+
+.Batman_Card_front {
+    width:300px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    backface-visibility:hidden;
+    background-image: url("Batman.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(236, 245, 2, 2.0);
+    border: 3px solid rgb(236, 245, 2);
+}
+
+.Batman_Card_back {
+    width:300px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-180deg);
+    background-image: url("Batman_Backcard.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(236, 245, 2, 2.0);
+    border: 3px solid rgb(236, 245, 2);
+}
+
+
+/*
+
+#image_backgroung_change {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('batman_gif.gif');
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: none;
+}
+
+*/
